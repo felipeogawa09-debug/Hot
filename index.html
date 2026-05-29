@@ -5,83 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zona das Casadas</title>
 
-  <!-- TIKTOK PIXEL -->
+  <!-- TikTok Pixel Code Start -->
   <script>
-    !function (w, d, t) {
-      w.TiktokAnalyticsObject = t;
-      var ttq = w[t] = w[t] || [];
-      ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie"];
-      ttq.setAndDefer = function (t, e) {
-        t[e] = function () {
-          t.push([e].concat(Array.prototype.slice.call(arguments, 0)))
-        }
-      };
+  !function (w, d, t) {
+    w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+    var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+    n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
 
-      for (var i = 0; i < ttq.methods.length; i++) {
-        ttq.setAndDefer(ttq, ttq.methods[i]);
-      }
-
-      ttq.load = function (e, n) {
-        var r = "https://analytics.tiktok.com/i18n/pixel/events.js";
-        ttq._i = ttq._i || {};
-        ttq._i[e] = [];
-        ttq._i[e]._u = r;
-        ttq._t = ttq._t || {};
-        ttq._t[e] = +new Date;
-        ttq._o = ttq._o || {};
-        ttq._o[e] = n || {};
-
-        var o = document.createElement("script");
-        o.type = "text/javascript";
-        o.async = !0;
-        o.src = r + "?sdkid=" + e + "&lib=" + t;
-
-        var a = document.getElementsByTagName("script")[0];
-        a.parentNode.insertBefore(o, a);
-      };
-
-      ttq.load("EAAR4f6ewX20BRhrbD9CxzK23t3FeTk2MH43hevwQim7EPIevPRWqBmyh8sIqioZA5kFY0p1wf8dPLzPQqTx7OSY6R3BG8TR0ewfoZAqMhc95TNkZArg7rA1zVLT014AkqEciLm4FuLnYtmvO0VCXRxgImUvyBTx9XIfJevdYTkqFNwFdkCpW9XO5KByPgZDZD");
-      ttq.page();
-    }(window, document, 'ttq');
+    ttq.load('D8B9A7RC77UAEKHUGAR0');
+    ttq.page();
+  }(window, document, 'ttq');
   </script>
-
-  <!-- META PIXEL -->
-  <script>
-    fetch("https://graph.facebook.com/v19.0/PIXEL_ID/events?access_token=EAAR4f6ewX20BRhrbD9CxzK23t3FeTk2MH43hevwQim7EPIevPRWqBmyh8sIqioZA5kFY0p1wf8dPLzPQqTx7OSY6R3BG8TR0ewfoZAqMhc95TNkZArg7rA1zVLT014AkqEciLm4FuLnYtmvO0VCXRxgImUvyBTx9XIfJevdYTkqFNwFdkCpW9XO5KByPgZDZD", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        "data": [
-          {
-            "event_name": "Purchase",
-            "event_time": 1779953672,
-            "action_source": "website",
-            "user_data": {
-              "em": [
-                "7b17fb0bd173f625b58636fb796407c22b3d16fc78302d79f0fd30c2fc2fc068"
-              ],
-              "ph": [
-                null
-              ]
-            },
-            "attribution_data": {
-              "attribution_share": "0.3"
-            },
-            "custom_data": {
-              "currency": "USD",
-              "value": "142.52"
-            },
-            "original_event_data": {
-              "event_name": "Purchase",
-              "event_time": 1779953672
-            }
-          }
-        ]
-      })
-    });
-  </script>
+  <!-- TikTok Pixel Code End -->
 
   <style>
     *{
