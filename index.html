@@ -1,125 +1,150 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zona das Casadas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona das Casadas</title>
 
-  <!-- TikTok Pixel Code Start -->
-  <script>
-  !function (w, d, t) {
-    w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
-    var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
-    n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+```
+<!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];
+  ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"];
+  ttq.setAndDefer=function(t,e){
+    t[e]=function(){
+      t.push([e].concat(Array.prototype.slice.call(arguments,0)))
+    }
+  };
+  for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);
+  ttq.instance=function(t){
+    for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);
+    return e
+  };
+  ttq.load=function(e,n){
+    var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;
+    ttq._i=ttq._i||{};
+    ttq._i[e]=[];
+    ttq._i[e]._u=r;
+    ttq._t=ttq._t||{};
+    ttq._t[e]=+new Date;
+    ttq._o=ttq._o||{};
+    ttq._o[e]=n||{};
+    n=document.createElement("script");
+    n.type="text/javascript";
+    n.async=!0;
+    n.src=r+"?sdkid="+e+"&lib="+t;
+    e=document.getElementsByTagName("script")[0];
+    e.parentNode.insertBefore(n,e)
+  };
 
-    ttq.load('D8CK00JC77U9J3L26DJ0');
-    ttq.page();
-  }(window, document, 'ttq');
-  </script>
-  <!-- TikTok Pixel Code End -->
+  ttq.load('D8F7ESBC77UB4KU2BLJG');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
 
-  <style>
+<style>
     *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family: Arial, Helvetica, sans-serif;
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial, Helvetica, sans-serif;
     }
 
     body{
-      width:100%;
-      min-height:100vh;
-      background:#000;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:40px 20px;
+        background:#000;
+        min-height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding:40px 20px;
     }
 
     .container{
-      width:100%;
-      display:flex;
-      flex-direction:column;
-      align-items:center;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
     }
 
     .btn{
-      display:inline-block;
-      background:#ff0000;
-      color:#fff;
-      text-decoration:none;
-      font-size:28px;
-      font-weight:bold;
-      text-align:center;
-      padding:22px 40px;
-      border-radius:18px;
-      box-shadow:0 0 25px rgba(255,0,0,0.7);
-      animation:pulse 1.5s infinite;
-      transition:0.3s;
-      max-width:90%;
+        display:inline-block;
+        background:#ff0000;
+        color:#fff;
+        text-decoration:none;
+        font-size:28px;
+        font-weight:bold;
+        text-align:center;
+        padding:22px 40px;
+        border-radius:18px;
+        box-shadow:0 0 25px rgba(255,0,0,.7);
+        animation:pulse 1.5s infinite;
+        transition:.3s;
+        max-width:90%;
     }
 
     .btn:hover{
-      transform:scale(1.05);
+        transform:scale(1.05);
     }
 
     .btn-secundario{
-      margin-top:5cm;
+        margin-top:5cm;
     }
 
     @keyframes pulse{
-      0%{
-        transform:scale(1);
-        box-shadow:0 0 0 0 rgba(255,0,0,0.8);
-      }
-
-      70%{
-        transform:scale(1.05);
-        box-shadow:0 0 0 25px rgba(255,0,0,0);
-      }
-
-      100%{
-        transform:scale(1);
-        box-shadow:0 0 0 0 rgba(255,0,0,0);
-      }
+        0%{
+            transform:scale(1);
+            box-shadow:0 0 0 0 rgba(255,0,0,.8);
+        }
+        70%{
+            transform:scale(1.05);
+            box-shadow:0 0 0 25px rgba(255,0,0,0);
+        }
+        100%{
+            transform:scale(1);
+            box-shadow:0 0 0 0 rgba(255,0,0,0);
+        }
     }
 
     @media(max-width:768px){
-      .btn{
-        font-size:22px;
-        padding:20px 25px;
-      }
+        .btn{
+            font-size:22px;
+            padding:20px 25px;
+        }
 
-      .btn-secundario{
-        margin-top:4cm;
-      }
+        .btn-secundario{
+            margin-top:4cm;
+        }
     }
-  </style>
-</head>
+</style>
+```
 
+</head>
 <body>
 
-  <div class="container">
+```
+<div class="container">
 
-    <a 
-      class="btn"
-      onclick="ttq.track('ClickButton')"
-      href="https://t.me/Vazadodascasadasbot?start=c5e9affa"
-      target="_blank"
-    >
-      🔞 Acessar a Zona das Casadas
+    <a
+        class="btn"
+        href="https://t.me/Vazadodascasadasbot"
+        target="_blank"
+        onclick="ttq.track('ClickButton');">
+        🔞 Acessar a Zona das Casadas
     </a>
 
-    <a 
-      class="btn btn-secundario"
-      onclick="ttq.track('ClickButton')"
-      href="https://t.me/ClubeDasCasadinhasbot"
-      target="_blank"
-    >
-      🔞 Acessar a Zona das Casadas
+    <a
+        class="btn btn-secundario"
+        href="https://t.me/Vazadodascasadasbot"
+        target="_blank"
+        onclick="ttq.track('ClickButton');">
+        🔞 Acessar a Zona das Casadas
     </a>
 
-  </div>
+</div>
+```
 
 </body>
 </html>
